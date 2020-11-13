@@ -35,3 +35,13 @@ console.log(`It is ${tempFahrenheit} degrees fahrenheit or ${tempCelsius.toFixed
 console.log(`Boston is ${elevationFeet} feet or ${elevationMeters.toFixed(2)} meters above sea level`);
 console.log(`${weightPounds} pounds is equivalent to ${weightKilograms.toFixed(2)} kilograms`);
 
+// chalk allows you to chain and nest styles as needed
+const chalk = require('chalk');
+
+console.log(chalk.blue('Hello!'))
+
+const go = chalk.green;
+const slow = chalk.yellow;
+const stop = chalk.red;
+
+console.log(stop('On your mark'), slow('Get set'), go('Go!'))
