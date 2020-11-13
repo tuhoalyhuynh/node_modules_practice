@@ -18,3 +18,20 @@ const bostonLosAngeles = distFrom(boston).to(losAngeles).in('mi');
 console.log(`The distance between Boston and Atlanta is ${bostonAtlanta.toFixed(2)} miles`);
 console.log(`The distance between Boston and Seattle is ${bostonSeattle.toFixed(2)} kilometers`);
 console.log(`The distance between Boston and Los Angeles is ${bostonLosAngeles.toFixed(2)} miles`);
+
+// convert allows quick unit conversions
+const { convert } = require('convert');
+
+const tempFahrenheit = 52;
+const elevationFeet = 141;
+const weightPounds = 150;
+
+const tempCelsius = convert(52).from('fahrenheit').to('celsius');
+const elevationMeters = convert(141).from('feet').to('meters');
+const weightKilograms = convert(150).from('pounds').to('kilograms');
+
+console.log(`It is ${tempFahrenheit} degrees fahrenheit or ${tempCelsius.toFixed(2)} degrees celsius in Boston right now`);
+// turns out the conversion from fahrenheit to celsius is wrong
+console.log(`Boston is ${elevationFeet} feet or ${elevationMeters.toFixed(2)} meters above sea level`);
+console.log(`${weightPounds} pounds is equivalent to ${weightKilograms.toFixed(2)} kilograms`);
+

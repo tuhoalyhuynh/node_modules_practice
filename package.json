@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/tuhoalyhuynh/node_modules_practice#readme",
   "dependencies": {
+    "convert": "^1.1.1",
     "distance-from": "^1.1.2"
   }
 }
